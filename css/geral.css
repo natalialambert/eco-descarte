@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f8f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffaf4;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #007500;
+    font-size: 22px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #005500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-icon {
+    font-size: 18px;
+}
+
+/* Hero */
+.hero {
+    background: url("../imagens/inicio.jpg") center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Acesso Rápido */
+.acesso-rapido {
+    background-color: #036400;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.acesso-rapido h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    background-color: #f9f8f4;
+    color: #036400;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #e5e5e5;
+}
+
+/* Notícias */
+.noticias {
+    background-color: #95b48e;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.noticias h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.sobre {
+    background: url('../imagens/sobre-nos.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.sobre-conteudo h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.sobre-conteudo p {
+    font-size: 16px;
+    max-width: 450px;
+}
+
+/* Seção Missão */
+.missao {
+    background-color: #87a674;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.missao h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.missao p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sobre {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .sobre-conteudo h2 {
+        font-size: 28px;
+    }
+}
