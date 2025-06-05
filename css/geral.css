@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #87a674;
+    background-color: #82A97A;
     color: #333;
 }
 
@@ -31,7 +31,7 @@ header {
 }
 
 .logo h1 {
-    color: #007500;
+    color: #01600F;
     font-size: 22px;
 }
 
@@ -49,7 +49,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #005500;
+    color: #01600F;
     text-decoration: none;
     font-weight: bold;
 }
@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 /* Acesso Rápido */
 .acesso-rapido {
-    background-color: #036400;
+    background-color: #01600F;
     padding: 40px 20px;
     text-align: center;
     color: white;
@@ -109,7 +109,7 @@ nav ul li a:hover {
 
 .botao {
     background-color: #f9f8f4;
-    color: #036400;
+    color: #01600F;
     padding: 12px 20px;
     border-radius: 25px;
     text-decoration: none;
