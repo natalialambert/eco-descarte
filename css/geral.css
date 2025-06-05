@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f8f4;
+    background-color: #87a674;
     color: #333;
 }
 
@@ -126,7 +126,6 @@ nav ul li a:hover {
 
 /* Notícias */
 .noticias {
-    background-color: #95b48e;
     padding: 40px 20px;
     text-align: center;
 }
@@ -148,7 +147,7 @@ nav ul li a:hover {
 }
 
 .sobre-conteudo h2 {
-    font-size: 35px;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 
@@ -159,13 +158,12 @@ nav ul li a:hover {
 
 /* Seção Missão */
 .missao {
-    background-color: #87a674;
     padding: 40px 20px;
     text-align: center;
 }
 
 .missao h2 {
-    font-size: 32px;
+    font-size: 30px;
     color: white;
     margin-bottom: 20px;
 }
