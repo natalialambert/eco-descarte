@@ -171,27 +171,6 @@ nav ul li a:hover {
     font-size: 35px;
 }
 
-.sobre {
-    background: url('../imagens/sobre-nos.jpg') center/cover no-repeat;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    padding-left: 60px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-}
-
-.sobre-conteudo h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.sobre-conteudo p {
-    font-size: 16px;
-    max-width: 450px;
-}
-
   /* Conteúdo principal */
   .conteudo {
     display: flex;
@@ -273,7 +252,55 @@ nav ul li a:hover {
 .btn-noticia:hover {
     background-color: #779c78;
   }
-  
+
+/*O que é reciclagem*/
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #82A97A;
+    justify-content: space-between;
+    padding: 50px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.imagens {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px; /* espaço entre colunas (esquerda ↔ direita) */
+    row-gap: 15px;   /* espaço entre linhas (cima ↕ baixo) */
+    margin: 0;
+}
+
+.imagens img {
+    width: 270px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.texto h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.texto {
+    flex: 1;
+    font-size: 1.1em;
+    color: #fffaf4;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
 /* Seção Missão */
 .missao {
     padding: 45px 25px;
@@ -294,6 +321,27 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 1.6;
     font-weight: bold;
+}
+
+.sobre {
+    background: url('../imagens/sobre-nos.jpg') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.sobre-conteudo h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.sobre-conteudo p {
+    font-size: 16px;
+    max-width: 450px;
 }
 
 /* Responsivo */
