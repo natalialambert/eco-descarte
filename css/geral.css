@@ -142,7 +142,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.botao {
+.btn-acesso-rapido {
     background-color: #f9f8f4;
     color: #01600F;
     padding: 12px 20px;
@@ -155,7 +155,7 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.botao:hover {
+.btn-acesso-rapido:hover {
     background-color: #e5e5e5;
 }
 
@@ -192,6 +192,80 @@ nav ul li a:hover {
     max-width: 450px;
 }
 
+  /* Conteúdo principal */
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+  
+  /* Notícia principal */
+  .noticia-principal {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .noticia-principal img {
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid black;
+  }
+  
+  .noticia-principal p {
+    margin: 15px 0;
+  }
+  
+  /* Notícias laterais */
+  .noticias-laterais {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 300px;
+  }
+  
+  .noticia-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .noticia-lateral-imagem {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 200px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid black;
+  }
+  
+  .noticia-lateral p {
+    margin: 10px 0;
+  }
+
+  .btn-noticia {
+    display: inline-block;
+    margin-top: 10px;
+    width: 195px;
+    height: 40px;
+    padding: 10px 24px;
+    background-color: #82A97A;
+    color: #315D38;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+  }
+
+.btn-noticia:hover {
+    background-color: #779c78;
+  }
+  
 /* Seção Missão */
 .missao {
     padding: 45px 25px;
@@ -272,8 +346,8 @@ nav ul li a:hover {
     line-height: 1.6;
     color: #333;
   }
-
-.btn-saiba-mais {
+  
+.btn-container {
     display: inline-block;
     margin-top: 50px;
     width: 215px;
@@ -287,6 +361,6 @@ nav ul li a:hover {
     font-size: 20px;
   }
 
-.btn-saiba-mais:hover {
+.btn-container:hover {
     background-color: #779c78;
   }
