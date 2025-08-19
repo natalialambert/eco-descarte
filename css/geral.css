@@ -254,7 +254,7 @@ nav ul li a:hover {
   }
 
 /*O que é reciclagem*/
-.container {
+.container-reciclagem {
     display: flex;
     align-items: center;
     background-color: #82A97A;
@@ -366,7 +366,7 @@ footer {
 
 /*Quem Somos*/ 
 
-.container {
+.container-qmsomos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
