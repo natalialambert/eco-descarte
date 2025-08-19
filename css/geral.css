@@ -297,6 +297,30 @@ footer {
     margin-top: 40px;
 }
 
+/*Dicas de Reciclagem*/
+.container-dicas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto-dicas h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.texto-dicas {
+    flex: 1;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 /* Seção Missão */
 .missao {
     padding: 45px 25px;
