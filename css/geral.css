@@ -187,6 +187,7 @@ nav ul li a:hover {
     width: 100%;
     max-width: 68%; /* antes: 550px */
     border: 0.2rem solid #82A97A;
+    margin-top: 6%;
   }
   
   .noticia-principal p {
@@ -214,7 +215,8 @@ nav ul li a:hover {
     width: 35%; /* antes: 400px */
     max-width: none;
     border: 0.2rem solid #82A97A; /* antes: 2px */
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .noticia-lateral-conteudo {
