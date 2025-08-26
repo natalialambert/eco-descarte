@@ -375,24 +375,24 @@ footer {
 }
 
 .sobre {
-    background: url('../imagens/sobre-nos.jpg') center/cover no-repeat;
-    height: 500px;
+    background: url("../imagens/sobre-nos.jpg") center/cover no-repeat;
+    height: 60vh; /* antes: 500px */
     display: flex;
     align-items: center;
-    padding-left: 60px;
+    padding-left: 3%; /* antes: 60px */
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.4);
     background-blend-mode: darken;
 }
 
 .sobre-conteudo h2 {
-    font-size: 36px;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 .sobre-conteudo p {
-    font-size: 16px;
-    max-width: 450px;
+    margin-top: 1rem; /* antes: 15px */
+    font-size: 1.1rem; /* antes: 16px */
 }
 
 /*Quem Somos*/ 
