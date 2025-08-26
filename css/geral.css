@@ -437,13 +437,6 @@ footer {
     color: #333;
   }
 
-  .partners-subtitle {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #333;
-  }
-
   .partners-grid {
     display: flex;
     flex-wrap: wrap;
@@ -467,6 +460,7 @@ footer {
     border-radius: 12px; /* cantos levemente arredondados */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* sombra padrão */
     transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 50px;
   }
   .partner-logo:hover img {
     transform: scale(1.08);
