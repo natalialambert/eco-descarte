@@ -18,7 +18,10 @@
             <img src="imagens/logo-eco-descarte.png" alt="Eco Descarte">
             <a class="logo-link" href="index.html"><h1>Eco Descarte</h1></a>
         </div>
-        <nav>
+        <button class="menu-toggle" id="menu-toggle">
+          ☰
+        </button>
+        <nav id="navbar">
             <ul>
                 <li><a href="#">Horários de Coleta</a></li>
                 <li><a href="#">Locais de Descarte</a></li>
@@ -35,6 +38,14 @@
                   </li>            
             </ul>
         </nav>
+        <script>
+          const menuToggle = document.getElementById('menu-toggle');
+          const navbar = document.getElementById('navbar').querySelector('ul');
+        
+          menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+          });
+        </script>
     </header>
     
     <section class="sobre">
