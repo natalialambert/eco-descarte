@@ -12,13 +12,13 @@ body {
 
 /* Header */
 header {
-    display: flex;
-    height: 90px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fffaf4;
-    padding: 10px 40px;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  height: 12vh; /* antes: 90px */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffaf4;
+  padding: 1% 3%; /* antes: 10px 40px */
+  border-bottom: 0.1rem solid #ddd;
 }
 
 .logo {
@@ -27,13 +27,13 @@ header {
 }
 
 .logo img {
-    width: 50px;
-    margin-right: 10px;
+  width: 15%; /* antes: 50px */
+  margin-right: 1%;
 }
 
 .logo h1 {
-    color: #01600F;
-    font-size: 22px;
+  color: #01600F;
+  font-size: 1.5rem; /* antes: 22px */
 }
 
 .logo-link {
@@ -44,9 +44,9 @@ header {
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 2vw; /* antes: 30px */
 }
 
 nav ul li a {
@@ -99,27 +99,22 @@ nav ul li a:hover {
 
 /* Hero */
 .hero {
-    background: url("../imagens/inicio.jpg") center/cover no-repeat;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    padding-left: 60px;
-    color: white;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.hero-content {
-    max-width: 600px;
+  background: url("../imagens/inicio.jpg") center/cover no-repeat;
+  height: 60vh; /* antes: 500px */
+  display: flex;
+  align-items: center;
+  padding-left: 3%; /* antes: 60px */
+  color: white;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .hero h2 {
-    font-size: 36px;
-    line-height: 1.3;
+  font-size: 2.5rem; /* antes: 36px */
 }
 
 .hero p {
-    margin-top: 15px;
-    font-size: 16px;
+  margin-top: 1rem; /* antes: 15px */
+  font-size: 1.1rem; /* antes: 16px */
 }
 
 /* Acesso Rápido */
@@ -161,14 +156,14 @@ nav ul li a:hover {
 
 /* Notícias */
 .noticias {
-    padding: 80px 40px;
-    text-align: center;
-    background-color: #82A97A;
+  padding: 6% 3%; /* antes: 80px 40px */
+  text-align: center;
+  background-color: #82A97A;
 }
 
 .noticias h3 {
-    color: white;
-    font-size: 35px;
+  color: white;
+  font-size: 2.5rem; /* antes: 35px */
 }
 
   /* Conteúdo principal */
@@ -190,8 +185,8 @@ nav ul li a:hover {
   
   .noticia-principal img {
     width: 100%;
-    max-width: 550px;
-    border: 2px solid #82A97A;
+    max-width: 68%; /* antes: 550px */
+    border: 0.2rem solid #82A97A;
   }
   
   .noticia-principal p {
