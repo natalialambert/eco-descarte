@@ -131,6 +131,134 @@
       </div>
     </section>
 
+    <div class="container-lista-residuos" id="lista-residuos">
+      <h3>LISTA DE RESÍDUOS RECICLÁVEIS</h3>
+      <P>A lista de resíduos abaixo tem caráter apenas <strong>informativo</strong>, visto que atualmente não há coleta seletiva de recicláveis no município.</P>
+    </div>
+
+    <div class="lixeiras">
+      <h3>CLIQUE NA LIXEIRA</h3>
+    
+      <!-- Papel -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa azul"></div>
+            <div class="corpo azul">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Papel</p>
+        </div>
+        <div class="info">
+          <h3>Papel</h3>
+          <p><strong>Papel e papelão:</strong> jornais, revistas, listas telefônicas, papéis de escritório, desenho, seda, kraft e impressos. <br><br> 
+            <strong>Embalagens:</strong> marmitex de alumínio, ovos, longa vida e produtos de higiene. <br><br> 
+            <strong>Outros papéis:</strong> papel alumínio, filtrante e heliográfico.</p>
+        </div>
+      </div>
+    
+      <!-- Plástico -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa vermelha"></div>
+            <div class="corpo vermelha">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Plástico</p>
+        </div>
+        <div class="info">
+          <h3>Plástico</h3>
+          <p><strong>Plásticos diversos:</strong> copos, potes, tampas, sacos, sacolas, utensílios e mesas de plástico.<br><br> 
+            <strong>Embalagens:</strong> frutas, legumes, marmitex e ovos (isopor), produtos de higiene e limpeza, refrigerantes e cápsulas de café. <br><br> 
+            <strong>Frascos e garrafas:</strong> condimentos, molhos, bebidas alcoólicas e não alcoólicas; partes externas de canetas e acrílicos.</p>
+        </div>
+      </div>
+    
+      <!-- Metal -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa amarela"></div>
+            <div class="corpo amarela">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Metal</p>
+        </div>
+        <div class="info">
+          <h3>Metal</h3>
+          <p><strong>Metais diversos:</strong> ferragens, fios de cobre e panelas sem cabo. <br><br>
+            <strong>Latas e embalagens metálicas:</strong> aerosol, azeite, cerveja, óleo, refrigerante e sardinha.</p>
+        </div>
+      </div>
+    
+      <!-- Vidro -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa verde"></div>
+            <div class="corpo verde">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Vidro</p>
+        </div>
+        <div class="info">
+          <h3>Vidro</h3>
+          <p><strong>Vidros domésticos e embalagens:</strong> copos, frascos de condimentos, molhos, perfumes e garrafas de bebidas. <br><br>
+            <strong>Vidros diversos:</strong> cacos, luminárias, vidros de automóveis e janelas.</p>
+        </div>
+      </div>
+
+      <!-- Baterias -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa laranja"></div>
+            <div class="corpo laranja">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Baterias</p>
+        </div>
+        <div class="info">
+          <h3>Baterias</h3>
+          <p><strong>Linha verde:</strong> pilhas, baterias, celulares, tablets, fones, carregadores, computadores, câmeras digitais e notebooks. <br><br>
+            <strong>Linha marrom:</strong> televisores com tubo, DVDs e acessórios de áudio. <br><br>
+            <strong>Linha branca:</strong> máquinas de lavar roupa e louça, geladeiras, fogão, ar-condicionado e micro-ondas. <br><br>
+            <strong>Linha azul:</strong> aparelhos domésticos como secadores, cafeteiras, ferro de passar, liquidificadores e aspiradores.</p>
+        </div>
+      </div>
+    
+      <!-- Rejeitos -->
+      <div class="lixeira-bloco">
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+          <div class="lixeira-container">
+            <div class="tampa cinza"></div>
+            <div class="corpo cinza">
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+            </div>
+          </div>
+          <p class="legenda">Outros</p>
+        </div>
+        <div class="info">
+          <h3>Rejeitos</h3>
+          <p><strong>Madeira:</strong> reciclável em alguns casos, dependendo da disponibilidade local. <br><br>
+            <strong>Resíduos eletrônicos:</strong> recicláveis quando houver estrutura adequada de reciclagem. <br><br>
+            <strong>Isopor:</strong> pode ser reciclado em locais específicos, dependendo da disponibilidade. <br><br>
+            <strong>Óleo de cozinha usado:</strong> deve ser filtrado e armazenado em garrafa PET para descarte adequado.</p>
+        </div>
+      </div>
+  
+    
+    </div>
+    
+    <script src="script.js"></script>
+    </div>
+
     <footer id="contatos">
       <div class="partners-container" aria-label="Seção de Parcerias">
         <div class="partners-title">APOIO</div>
