@@ -589,6 +589,125 @@ footer {
 .info.laranja { background-color: #ff6600; }
 
 
+/*Local de Descarte*/
+.local {
+  background: url("../imagens/local-descarte.jpg") center/cover no-repeat;
+  height: 60vh; /* antes: 500px */
+  display: flex;
+  align-items: center;
+  padding-left: 3%; /* antes: 60px */
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  filter: brightness(90%);
+}
+  
+.local-conteudo h2 {
+  font-size: 2.5rem; /* antes: 36px */
+}
+  
+.local-conteudo p {
+  margin-top: 1rem; /* antes: 15px */
+  font-size: 1.1rem; /* antes: 16px */
+}
+
+.local-descarte {
+  padding: 4% 2%; /* antes: 80px 40px */
+  text-align: center;
+  background-color: #82A97A;
+}
+
+.local-descarte h3 {
+  color: white;
+  font-size: 2.5rem; /* antes: 35px */
+}
+
+
+/*Lista Descarte*/
+.lista-descarte {
+  padding: 30px;
+}
+
+.lista-descarte p {
+  flex: 1;
+  font-size: 1.1em;
+  color: #315D38;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.lista-descarte h2 {
+  font-size: 2.5rem;
+  margin: 0 0 20px 0;
+  color: #315D38;
+  text-align: center;
+}
+
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #315D38;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.menu li a.active::after {
+  margin-top: 100px;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #315D38;
+  bottom: -5px;
+  left: 0;
+}
+
+.menu li a,
+.menu li a:visited,
+.menu li a:active,
+.menu li a:hover {
+  text-decoration: none !important;
+}
+
+/* Conteúdo */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+#content {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  align-items: center;
+}
+
+#content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #315D38;
+  text-align: center;
+}
+
+#content ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+  color: #315D38;
+}
+
+
 /*Rodapé*/
 footer {
     background: #f7f7f7;
