@@ -33,7 +33,9 @@ const contentData = {
       Secretaria Municipal de Meio Ambiente <br>
       Prefeitura Municipal <br>
       Hospital Regional de Paraíso <br>
-      Teatro Municipal Cora Coralina <br>
+      Teatro Municipal Cora Coralina
+    </p>
+    <p>
       IFTO <br>
       UNEST <br>
       Escola Estadual Deusa Moraes <br>
