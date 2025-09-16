@@ -30,7 +30,7 @@ const locais = [
     },
     {
       nome: "Farma Coelho",
-      coords: [-10.1760, -48.8810],
+      coords: [-10.194713722968347, -48.88978822118134],
       descricao: "Av. 23 de Outubro, 1021 - St. Pouso Alegre, Paraíso do Tocantins - TO, 77600-000"
     },
     {
@@ -55,42 +55,42 @@ const locais = [
     },
     {
       nome: "Câmara Municipal de Vereadores",
-      coords: [-10.174998069239793, -48.88390705939714],
+      coords: [-10.17469304028881, -48.883784700039435],
       descricao: "Prédio púb Palácio Zeca Moraes - Av. Bernardo Sayão, 800 - Centro, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Secretaria Municipal de Educação",
-      coords: [-10.1776, -48.8832],
+      coords: [-10.194488453053795, -48.8914093731235],
       descricao: "Rua 57 - St. Pouso Alegre, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Secretaria Municipal de Infraestrutura",
-      coords: [-10.1782, -48.8838],
+      coords: [-10.176442878548595, -48.88104725909639],
       descricao: "Av. Transbrasiliana, nº 335, Centro, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Secretaria Municipal de Saúde",
-      coords: [-10.1787, -48.8843],
+      coords: [-10.170025275793911, -48.88442059271212],
       descricao: "Rua Alfredo Nasser, nº 843, Centro, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Secretaria Municipal de Meio Ambiente",
-      coords: [-10.1792, -48.8848],
+      coords: [-10.170255005342716, -48.881626702296224],
       descricao: "Rua Bernardino Maciel, nº 88, Paraíso do Tocantins - TO, 77600-000" 
     },
     {
       nome: "Prefeitura Municipal de Paraíso do Tocantins",
-      coords: [-10.1797, -48.8853],
+      coords: [-10.17656427003897, -48.88104958254585],
       descricao: "Av. Transbrasiliana, 335 - Centro, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Hospital Regional de Paraíso",
-      coords: [-10.1805, -48.8860],
-      descricao: "Rua 03 Quadra 02 Lotes 01 ao 19 , Setor Aeroporto, Paraíso do Tocantins - TO, 77600-000"
+      coords: [-10.180581179298615, -48.90076730381993],
+      descricao: "Rua 03, Quadra 02, Lotes 01 ao 19, Setor Aeroporto, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Teatro Municipal Cora Coralina",
-      coords: [-10.1810, -48.8865],
+      coords: [-10.175121126795013, -48.886923306820364],
       descricao: "Palácio da Cultura Cora Coralina, R. 13 de Maio - Centro, Paraíso do Tocantins - TO, 77600-000"
     }
   
