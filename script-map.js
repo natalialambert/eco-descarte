@@ -30,7 +30,7 @@ const locais = [
     },
     {
       nome: "Farma Coelho",
-      coords: [-10.194713722968347, -48.88978822118134],
+      coords: [-10.1760, -48.8810],
       descricao: "Av. 23 de Outubro, 1021 - St. Pouso Alegre, Paraíso do Tocantins - TO, 77600-000"
     },
     {
@@ -85,12 +85,12 @@ const locais = [
     },
     {
       nome: "Hospital Regional de Paraíso",
-      coords: [-10.180581179298615, -48.90076730381993],
+      coords: [-10.181276102367892, -48.903272357981535],
       descricao: "Rua 03, Quadra 02, Lotes 01 ao 19, Setor Aeroporto, Paraíso do Tocantins - TO, 77600-000"
     },
     {
       nome: "Teatro Municipal Cora Coralina",
-      coords: [-10.175121126795013, -48.886923306820364],
+      coords: [-10.1810, -48.8865],
       descricao: "Palácio da Cultura Cora Coralina, R. 13 de Maio - Centro, Paraíso do Tocantins - TO, 77600-000"
     }
   
