@@ -1,5 +1,22 @@
-// Centraliza o mapa em Paraíso do Tocantins
-const map = L.map('map').setView([-10.1754, -48.8826], 13);
+const map = L.map('map', {
+  center: [-10.1754, -48.8826],
+  zoom: 13,
+  scrollWheelZoom: false // Desativa zoom pelo scroll normal
+});
+
+// Adiciona camada de mapa (OpenStreetMap)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contribuidores'
+}).addTo(map);
+
+// Ativa zoom apenas com CTRL + scroll
+map.getContainer().addEventListener('wheel', function (event) {
+  if (event.ctrlKey) {
+    map.scrollWheelZoom.enable();
+  } else {
+    map.scrollWheelZoom.disable();
+  }
+});
 
 // Adiciona camada de mapa (OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

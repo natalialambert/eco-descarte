@@ -735,6 +735,11 @@ main {
   text-align: center;
 }
 
+.mapa p {
+  margin: 15px 0;
+  text-align: center;
+}
+
 #map {
   height: 500px;
   width: 90%;
@@ -742,8 +747,6 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-
 
 /*Rodapé*/
 footer {
