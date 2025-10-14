@@ -701,6 +701,37 @@ main {
   color: #315D38;
 }
 
+/*Horário de Coleta*/
+.horario-coleta {
+  padding: 4% 2%; /* antes: 80px 40px */
+  text-align: center;
+  background-color: #82A97A;
+}
+
+.horario-coleta h3 {
+  color: white;
+  font-size: 2.5rem; /* antes: 35px */
+}
+
+/* Área principal com os textos */
+.content {
+  flex: 1;
+  padding: 3rem;
+  line-height: 1.5;
+}
+
+.content h2 {
+  font-size: 25px;
+  color: #315D38;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.content p {
+  margin-bottom: 0.8rem;
+  font-size: 20px;
+}
+
 /*Escolas*/
 .escola {
   padding: 4% 2%; /* antes: 80px 40px */
@@ -717,7 +748,9 @@ main {
   display: flex;
   justify-content: center;
   padding: 40px;  
-  font-size: 18px;
+  margin-top: 1rem; /* antes: 15px */
+  font-size: 1.1rem; /* antes: 16px */
+  color: #315D38;
   gap: 40px;
   align-items: center;
 }
@@ -733,6 +766,7 @@ main {
 .mapa h2 {
   margin: 15px 0;
   text-align: center;
+  color: #315D38;
 }
 
 .mapa p {
