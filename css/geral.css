@@ -803,7 +803,7 @@ main {
 
 /* Área principal com os textos */
 .content {
-  flex: 1;
+  display: flex;
   padding: 3rem;
   line-height: 1.5;
 }
@@ -818,6 +818,22 @@ main {
 .content p {
   margin-bottom: 0.8rem;
   font-size: 20px;
+}
+
+.setor1 {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.setor2 {
+  flex: 1 1;
+  margin-left: 150px;
+}
+
+.setor-img {
+  flex: 1 1 1;
+  margin-left: 150px;
+  margin-right: 50px;
 }
 
 /*Escolas*/
