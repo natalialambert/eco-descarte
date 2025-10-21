@@ -29,12 +29,14 @@
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="#contatos">Contatos</a></li>
                 <li>
-                    <form class="search-form" action="#" method="GET">
-                      <input type="text" name="q" placeholder="Buscar..." />
+                    <form id="search-form" class="search-form" onsubmit="return false;">
+                      <input type="text" id="search-input" placeholder="Buscar..." />
                       <button type="submit">
                         <img src="imagens/icone-busca.png" alt="Buscar" class="search-icon-img">
                       </button>
                     </form>
+                  
+                    <div id="search-results"></div>
                   </li>              
             </ul>
         </nav>
@@ -47,6 +49,45 @@
           });
         </script>
     </header>
+
+    <script>
+      async function carregarIndice() {
+        const resposta = await fetch('search-index.json');
+        return await resposta.json();
+      }
+      
+      document.addEventListener('DOMContentLoaded', async () => {
+        const dados = await carregarIndice();
+        const input = document.getElementById('search-input');
+        const resultadosDiv = document.getElementById('search-results');
+      
+        input.addEventListener('input', () => {
+          const termo = input.value.toLowerCase().trim();
+          resultadosDiv.innerHTML = '';
+      
+          if (termo.length === 0) return;
+      
+          const filtrados = dados.filter(pagina =>
+            pagina.title.toLowerCase().includes(termo) ||
+            pagina.content.toLowerCase().includes(termo)
+          );
+      
+          if (filtrados.length === 0) {
+            resultadosDiv.innerHTML = '<p>Nenhum resultado encontrado.</p>';
+            return;
+          }
+      
+          filtrados.forEach(pagina => {
+            const item = document.createElement('div');
+            item.innerHTML = `
+              <a href="${pagina.url}"><strong>${pagina.title}</strong></a><br>
+              <small>${pagina.content.substring(0, 120)}...</small>
+            `;
+            resultadosDiv.appendChild(item);
+          });
+        });
+      });
+      </script>
 
     <section class="hero">
         <div class="hero-content">

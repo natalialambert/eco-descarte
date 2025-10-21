@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Página Inicial",
+      "url": "index.html",
+      "content": "Bem-vindo ao nosso site. Aqui você encontra informações sobre nossos produtos e serviços."
+    },
+    {
+      "title": "Sobre Nós",
+      "url": "sobre.html",
+      "content": "Saiba mais sobre a história da empresa e nossa missão."
+    },
+    {
+      "title": "Contato",
+      "url": "contato.html",
+      "content": "Entre em contato conosco por e-mail, telefone ou redes sociais."
+    }
+  ]
+  
