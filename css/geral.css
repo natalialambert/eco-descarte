@@ -330,26 +330,54 @@ footer {
 
 /*Dicas de Reciclagem*/
 .container-dicas {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 5%;
-    gap: 40px;
-    flex-wrap: wrap;
+  text-align: center;
+  padding: 40px;
+  max-width: 1200px;
 }
 
-.texto-dicas h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+.container h1 {
+  font-size: 2rem;
+  color: #2b504a;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
 }
 
-.texto-dicas {
-    flex: 1;
-    font-size: 1.1em;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    border-radius: 10px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  color: #298c67;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
 /* Seção Missão */
