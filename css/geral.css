@@ -307,8 +307,8 @@ nav ul li a:hover {
 }
 
 .texto h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .texto {
@@ -329,25 +329,23 @@ footer {
 }
 
 /*Dicas de Reciclagem*/
-.container-dicas {
+.dica {
+  background-color: #01600F;
+  padding: 4% 2%;
   text-align: center;
-  padding: 40px;
-  max-width: 1200px;
+  color: white;
 }
 
-.container h1 {
-  font-size: 2rem;
-  color: #2b504a;
-  margin-bottom: 30px;
-  text-align: center;
-  padding: 20px;
+.dica h3 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 50px;
 }
 
 .card {
