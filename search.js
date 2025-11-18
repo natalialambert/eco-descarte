@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }, 100);
                 }
             } else {
-                item.style.display = 'none';
+                print("Nenhum resultado encontrado nessa área");
             }
         });
 
