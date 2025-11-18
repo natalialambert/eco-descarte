@@ -60,10 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 100);
                 }
-            } else {
-                print("Nenhum resultado encontrado nessa área");
             }
-        });
+        );
 
         // Mostra mensagem de resultado
         if (searchResults) {
