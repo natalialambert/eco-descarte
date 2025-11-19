@@ -2,551 +2,558 @@
 <html lang="pt-BR">
 
 <head>
-
-    <link href="css/geral.css" rel="stylesheet" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Descarte</title>
-    <link rel="website icon" type="png" href="imagens/logo-eco-descarte.png">
-    
+  <link href="css/geral.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Descarte</title>
+  <link rel="website icon" type="png" href="imagens/logo-eco-descarte.png">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="imagens/logo-eco-descarte.png" alt="Eco Descarte">
-            <a class="logo-link" href="index.html"><h1>Eco Descarte</h1></a>
-        </div>
-        <button class="menu-toggle" id="menu-toggle">
-          ☰
-        </button>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#dicas">Dicas de Reciclagem</a></li>
-                <li><a href="#lista-residuos">Lista de Resíduos</a></li>
-                <li><a href="local-descarte.html">Locais de Descarte</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-                <li>
-
-                    <form id="search-form" class="search-form" onsubmit="return false;">
-                      <input type="text" id="search-input" placeholder="Buscar..." />
-                      <button type="submit">
-                        <img src="imagens/icone-busca.png" alt="Buscar" class="search-icon-img">
-                      </button>
-                    </form>
-                    <script src="search.js"></script>
-                  
-                    <div id="search-results" class="search-results"></div>
-                  </li>              
-            </ul>
-        </nav>      
-        <script>
-          const menuToggle = document.getElementById('menu-toggle');
-          const navbar = document.getElementById('navbar').querySelector('ul');
-        
-          menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('show');
-          });
-        </script>
-    </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h2>O DESTINO CORRETO DO<br>SEU LIXO COMEÇA AQUI</h2>
-            <p><strong>Saiba como</strong> separar seus resíduos e descubra onde <strong>descartar</strong> corretamente.</p>
-        </div>
-    </section>
-
-    <section class="acesso-rapido">
-        <h3>ACESSO RÁPIDO</h3>
-        <div class="botoes">
-            <a href="#lista-residuos" class="btn-acesso-rapido"><img src="imagens/icone-lixo.png" width="20">Lista de Resíduos</a>
-            <a href="local-descarte.html" class="btn-acesso-rapido"><img src="imagens/icone-local.png" width="18">Locais de descarte</a>
-            <a href="#dicas" class="btn-acesso-rapido"><img src="imagens/icone-dica.png" width="20">Dicas de reciclagem</a>
-        </div>
-    </section>
-
-    <section class="noticias">
-        <h3>PRINCIPAIS NOTÍCIAS</h3>
-    </section>
-
-    <!-- Content Area para busca - Todo conteúdo pesquisável -->
-    <div id="content-area">
-
-      <main class="conteudo">
-
-          <div class="noticia-principal item" data-search="notícia secretaria meio ambiente estudantes ifto projeto ecodescarte">
-
-            <img src="imagens/noticia-eco-descarte.jpeg" alt="Encontro Eco Descarte" />
-
-            <p>Secretaria de Meio Ambiente recebe estudantes do IFTO </br> e acompanha primeiros resultados do projeto EcoDescarte</p>
-
-            <a href="https://paraiso.to.gov.br/secretaria-de-meio-ambiente-recebe-estudantes-do-ifto-e-acompanha-primeiros-resultados-do-projeto-ecodescarte/" class="btn-noticia">SAIBA MAIS</a>
-
-          </div>
-
-      
-
-          <div class="noticias-laterais">
-
-            <div class="noticia-lateral item" data-search="notícia prefeitura paraíso pneus reciclagem">
-
-              <img class="noticia-lateral-imagem" src="imagens/noticia-pneu.jpg" alt="Pneus para Reciclagem" />
-
-              <div class="noticia-lateral-conteudo">
-
-                <p>Prefeitura de Paraíso encaminha mais de 1.200 pneus para reciclagem</p>
-
-                <a href="https://paraiso.to.gov.br/prefeitura-de-paraiso-encaminha-mais-de-1-200-pneus-para-reciclagem/" class="btn-noticia">SAIBA MAIS</a>
-
-              </div>
-
-            </div>
-
-            <div class="noticia-lateral item" data-search="notícia secretaria meio ambiente paraíso óleo fritura sustentável coleta gerenciamento">
-
-              <img class="noticia-lateral-imagem" src="imagens/noticia-fritura.jpeg" alt="Gerenciamento de Óleo de fritura " />
-
-              <div class="noticia-lateral-conteudo">
-
-                <p>Secretaria de Meio Ambiente de Paraíso busca práticas sustentáveis na coleta e gerenciamento de óleo de fritura</p>
-
-                <a href="https://paraiso.to.gov.br/secretaria-de-meio-ambiente-de-paraiso-busca-praticas-sustentaveis-na-coleta-e-gerenciamento-de-oleo-de-fritura/" class="btn-noticia">SAIBA MAIS</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </main>
-
-          
-
-      <section class="container-reciclagem item" data-search="reciclagem processo transformar resíduos sólidos lixo produtos reduzir consumo matérias-primas poluição desperdício recursos naturais coleta separação processamento materiais papel plástico vidro metal reaproveitados indústria preservação meio ambiente renda sustentável">
-
-        <div class="imagens">
-
-          <img src="imagens/imagem2.jpg" alt="Reciclagem de plásticos">
-
-        </div>
-
-
-
-        <div class="texto" >
-
-          <h1>O QUE É RECICLAGEM?</h1>
-
-          <p>
-
-              Reciclagem é o processo de transformar resíduos sólidos que iriam para o lixo em novos produtos, 
-
-              reduzindo o consumo de matérias-primas, a poluição e o desperdício de recursos naturais. 
-
-              Ela envolve a coleta, separação e processamento de materiais como papel, plástico, vidro e metal, 
-
-              que podem ser reaproveitados na indústria.
-
-          </p>
-
-          <p>
-
-              Além de diminuir a quantidade de lixo nos aterros, a reciclagem contribui para a preservação do meio 
-
-              ambiente e gera renda para muitas pessoas. Reciclar é um gesto simples, mas com grande impacto na 
-
-              construção de um futuro mais sustentável.
-
-          </p>
-
-        </div>
-
-      </section>
-
-
-
-      <section class="dicas" id="dicas">
-
-        <div class="dica">
-
-          <h3>DICAS DE RECICLAGEM</h3>
-
-        </div>
-
-        <div class="cards">
-
-            <div class="card item" data-search="dica separar lixo organizar reciclável não reciclável coleta">
-
-                <img src="imagens/lixeiras.png" alt="Separar Lixo">
-
-                <h2>Separe o Lixo</h2>
-
-                <p>Organize o lixo em reciclável e não reciclável para facilitar a coleta.</p>
-
-            </div>
-
-
-
-            <div class="card item" data-search="dica limpar recicláveis lavar embalagens descartar mau cheiro contaminação">
-
-                <img src="imagens/reciclavel.png" alt="Limpar Recicláveis">
-
-                <h2>Limpe os Recicláveis</h2>
-
-                <p>Lave embalagens antes de descartá-las. Isso evita mau cheiro e contaminação.</p>
-
-            </div>
-
-
-
-            <div class="card item" data-search="dica reutilizar materiais garrafas potes papéis ações">
-
-                <img src="imagens/garrafa.png" alt="Reutilizar">
-
-                <h2>Reutilize Materiais</h2>
-
-                <p>Dê uma nova função a garrafas, potes e papéis. Pequenas ações fazem diferença!</p>
-
-            </div>
-
-
-
-            <div class="card item" data-search="dica composteira transformar restos comida adubo natural reduzir lixo orgânico">
-
-                <img src="imagens/fruta.png" alt="Composteira">
-
-                <h2>Use Composteira</h2>
-
-                <p>Transforme restos de comida em adubo natural e reduza o lixo orgânico.</p>
-
-            </div>
-
-            
-
-        </div>
-
-
-
-    </section>
-
-
-
-      <div class="container-lista-residuos" id="lista-residuos">
-
-        <h3>LISTA DE RESÍDUOS RECICLÁVEIS</h3>
-
-        <P>A lista de resíduos abaixo tem caráter apenas <strong>informativo</strong>, visto que atualmente não há coleta seletiva de recicláveis no município.</P>
-
-      </div>
-
-
-
-      <div class="lixeiras">
-
-        <h3>CLIQUE NA LIXEIRA</h3>
-
-      
-
-        <!-- Papel -->
-
-        <div class="lixeira-bloco item" data-search="papel papelão jornais revistas listas telefônicas papéis escritório desenho seda kraft impressos embalagens marmitex alumínio ovos longa vida produtos higiene papel alumínio filtrante heliográfico">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa azul"></div>
-
-              <div class="corpo azul">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Papel</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Papel</h3>
-
-            <p><strong>Papel e papelão:</strong> jornais, revistas, listas telefônicas, papéis de escritório, desenho, seda, kraft e impressos. <br><br> 
-
-              <strong>Embalagens:</strong> marmitex de alumínio, ovos, longa vida e produtos de higiene. <br><br> 
-
-              <strong>Outros papéis:</strong> papel alumínio, filtrante e heliográfico.</p>
-
-          </div>
-
-        </div>
-
-      
-
-        <!-- Plástico -->
-
-        <div class="lixeira-bloco item" data-search="plástico copos potes tampas sacos sacolas utensílios mesas embalagens frutas legumes marmitex ovos isopor produtos higiene limpeza refrigerantes cápsulas café frascos garrafas condimentos molhos bebidas alcoólicas não alcoólicas canetas acrílicos">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa vermelha"></div>
-
-              <div class="corpo vermelha">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Plástico</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Plástico</h3>
-
-            <p><strong>Plásticos diversos:</strong> copos, potes, tampas, sacos, sacolas, utensílios e mesas de plástico.<br><br> 
-
-              <strong>Embalagens:</strong> frutas, legumes, marmitex e ovos (isopor), produtos de higiene e limpeza, refrigerantes e cápsulas de café. <br><br> 
-
-              <strong>Frascos e garrafas:</strong> condimentos, molhos, bebidas alcoólicas e não alcoólicas; partes externas de canetas e acrílicos.</p>
-
-          </div>
-
-        </div>
-
-      
-
-        <!-- Metal -->
-
-        <div class="lixeira-bloco item" data-search="metal ferragens fios cobre panelas latas embalagens metálicas aerosol azeite cerveja óleo refrigerante sardinha">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa amarela"></div>
-
-              <div class="corpo amarela">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Metal</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Metal</h3>
-
-            <p><strong>Metais diversos:</strong> ferragens, fios de cobre e panelas sem cabo. <br><br>
-
-              <strong>Latas e embalagens metálicas:</strong> aerosol, azeite, cerveja, óleo, refrigerante e sardinha.</p>
-
-          </div>
-
-        </div>
-
-      
-
-        <!-- Vidro -->
-
-        <div class="lixeira-bloco item" data-search="vidro domésticos embalagens copos frascos condimentos molhos perfumes garrafas bebidas cacos luminárias vidros automóveis janelas">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa verde"></div>
-
-              <div class="corpo verde">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Vidro</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Vidro</h3>
-
-            <p><strong>Vidros domésticos e embalagens:</strong> copos, frascos de condimentos, molhos, perfumes e garrafas de bebidas. <br><br>
-
-              <strong>Vidros diversos:</strong> cacos, luminárias, vidros de automóveis e janelas.</p>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- Baterias -->
-
-        <div class="lixeira-bloco item" data-search="baterias pilhas celulares tablets fones carregadores computadores câmeras digitais notebooks linha verde marrom televisores tubo DVDs acessórios áudio linha branca máquinas lavar roupa louça geladeiras fogão ar-condicionado micro-ondas linha azul aparelhos domésticos secadores cafeteiras ferro passar liquidificadores aspiradores">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa laranja"></div>
-
-              <div class="corpo laranja">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Baterias</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Baterias</h3>
-
-            <p><strong>Linha verde:</strong> pilhas, baterias, celulares, tablets, fones, carregadores, computadores, câmeras digitais e notebooks. <br><br>
-
-              <strong>Linha marrom:</strong> televisores com tubo, DVDs e acessórios de áudio. <br><br>
-
-              <strong>Linha branca:</strong> máquinas de lavar roupa e louça, geladeiras, fogão, ar-condicionado e micro-ondas. <br><br>
-
-              <strong>Linha azul:</strong> aparelhos domésticos como secadores, cafeteiras, ferro de passar, liquidificadores e aspiradores.</p>
-
-          </div>
-
-        </div>
-
-      
-
-        <!-- Rejeitos -->
-
-        <div class="lixeira-bloco item" data-search="rejeitos madeira reciclável resíduos eletrônicos isopor óleo cozinha usado filtrado armazenado garrafa PET descarte adequado">
-
-          <div class="lixeira-item" onclick="mostrarInfo(this)">
-
-            <div class="lixeira-container">
-
-              <div class="tampa cinza"></div>
-
-              <div class="corpo cinza">
-
-                <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
-
-              </div>
-
-            </div>
-
-            <p class="legenda">Outros</p>
-
-          </div>
-
-          <div class="info">
-
-            <h3>Rejeitos</h3>
-
-            <p><strong>Madeira:</strong> reciclável em alguns casos, dependendo da disponibilidade local. <br><br>
-
-              <strong>Resíduos eletrônicos:</strong> recicláveis quando houver estrutura adequada de reciclagem. <br><br>
-
-              <strong>Isopor:</strong> pode ser reciclado em locais específicos, dependendo da disponibilidade. <br><br>
-
-              <strong>Óleo de cozinha usado:</strong> deve ser filtrado e armazenado em garrafa PET para descarte adequado.</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-  </div>
-    
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">
+      <img src="imagens/logo-eco-descarte.png" alt="Eco Descarte">
+      <a class="logo-link" href="index.html">
+        <h1>Eco Descarte</h1>
+      </a>
     </div>
 
-    <footer id="contatos">
-      <div class="partners-container" aria-label="Seção de Parcerias">
-        <div class="partners-title">APOIO</div>
-        <div class="partners-grid">
-          <div class="partner-logo">
-            <a href="https://www.reciclanip.org.br/" target="_blank" rel="noopener">
-              <img src="imagens/logo-reciclanip.png" alt="reciclaNip">
-            </a>
-          </div>
-          <div class="partner-logo">
-            <a href="https://paraiso.to.gov.br" target="_blank" rel="noopener">
-              <img src="imagens/logo-gov-pso.png" alt="Governo de Paraíso do Tocantins – Educação e Juventude">
-            </a>
-          </div>
-          <div class="partner-logo">
-            <a href="https://www.ifto.edu.br/paraiso" target="_blank" rel="noopener">
-              <img src="imagens/logo-ifto.png" alt="IFTO – Campus Paraíso do Tocantins">
-            </a>
-          </div>
-          <div class="partner-logo">
-            <a href="https://institutonaturavida.com.br/" target="_blank" rel="noopener">
-              <img src="imagens/logo-ina.png" alt="Instituto Natura Vida">
-            </a>
+    <button class="menu-toggle" id="menu-toggle">
+      ☰
+    </button>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="#dicas">Dicas de Reciclagem</a></li>
+        <li><a href="#lista-residuos">Lista de Resíduos</a></li>
+        <li><a href="local-descarte.html">Locais de Descarte</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+
+        <li>
+          <!-- FORMULÁRIO DE BUSCA -->
+          <form id="search-form" class="search-form" onsubmit="return false;">
+            <input type="text" id="search-input" placeholder="Buscar..." />
+            <button type="submit">
+              <img src="imagens/icone-busca.png" alt="Buscar" class="search-icon-img">
+            </button>
+          </form>
+
+          <!-- ÁREA PARA RESULTADOS / CONTAGEM / MENSAGENS -->
+          <div id="search-results" class="search-results"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navbar = document.getElementById('navbar').querySelector('ul');
+
+      menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+      });
+    </script>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>O DESTINO CORRETO DO<br>SEU LIXO COMEÇA AQUI</h2>
+      <p><strong>Saiba como</strong> separar seus resíduos e descubra onde <strong>descartar</strong> corretamente.</p>
+    </div>
+  </section>
+
+  <section class="acesso-rapido">
+    <h3>ACESSO RÁPIDO</h3>
+    <div class="botoes">
+      <a href="#lista-residuos" class="btn-acesso-rapido"><img src="imagens/icone-lixo.png" width="20">Lista de
+        Resíduos</a>
+      <a href="local-descarte.html" class="btn-acesso-rapido"><img src="imagens/icone-local.png" width="18">Locais de
+        descarte</a>
+      <a href="#dicas" class="btn-acesso-rapido"><img src="imagens/icone-dica.png" width="20">Dicas de reciclagem</a>
+    </div>
+  </section>
+
+  <section class="noticias">
+    <h3>PRINCIPAIS NOTÍCIAS</h3>
+  </section>
+
+  <!-- ÁREA PESQUISÁVEL -->
+  <div id="content-area">
+
+    <main class="conteudo">
+
+      <div class="noticia-principal item"
+        data-search="notícia secretaria meio ambiente estudantes ifto projeto ecodescarte">
+        <img src="imagens/noticia-eco-descarte.jpeg" alt="Encontro Eco Descarte" />
+        <p>Secretaria de Meio Ambiente recebe estudantes do IFTO </br> e acompanha primeiros resultados do projeto
+          EcoDescarte</p>
+        <a href="https://paraiso.to.gov.br/secretaria-de-meio-ambiente-recebe-estudantes-do-ifto-e-acompanha-primeiros-resultados-do-projeto-ecodescarte/"
+          class="btn-noticia">SAIBA MAIS</a>
+      </div>
+
+      <div class="noticias-laterais">
+
+        <div class="noticia-lateral item" data-search="notícia prefeitura paraíso pneus reciclagem">
+          <img class="noticia-lateral-imagem" src="imagens/noticia-pneu.jpg" alt="Pneus para Reciclagem" />
+          <div class="noticia-lateral-conteudo">
+            <p>Prefeitura de Paraíso encaminha mais de 1.200 pneus para reciclagem</p>
+            <a href="https://paraiso.to.gov.br/prefeitura-de-paraiso-encaminha-mais-de-1-200-pneus-para-reciclagem/"
+              class="btn-noticia">SAIBA MAIS</a>
           </div>
         </div>
-        <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:40px;">
 
-          <div style="flex:1; min-width:250px;">
-            <h3 style="font-size:20px; font-weight:bold; margin-bottom:15px; color:#000;">Ouvidoria</h3>
-            <p style="margin:8px 0;">
-              <a href="mailto:ouvidoria@paraiso.to.gov.br" style="color:#008000; text-decoration:none;">
-                ✉️ ouvidoria@paraiso.to.gov.br
-              </a>
-            </p>
-            <p style="margin:8px 0;">
-              <a href="tel:+5563999997665" style="color:#008000; text-decoration:none;">
-                📞 Telefone: (63) 99999-7665
-              </a>
-            </p>
-          </div>
-      
-          <div style="flex:1; min-width:200px; text-align:center;">
-            <a href="index.html">
-            <img src="imagens/logo-eco-descarte.png" alt="Logo do Projeto" style="max-width:180px; margin-bottom:10px;">
-            </a>
-          </div>
-      
-          <div style="flex:1; min-width:250px;">
-            <h3 style="font-size:20px; font-weight:bold; margin-bottom:15px; color:#000;">Contatos do Projeto</h3>
-            <p style="margin:8px 0;">
-              <a href="mailto:ecodescartepso@gmail.com" style="color:#008000; text-decoration:none;">
-                ✉️ ecodescartepso@gmail.com
-              </a>
-            </p>
-            <p style="margin:8px 0;">
-              <a href="https://instagram.com/ecodescarte.pso" target="_blank" style="color:#008000; text-decoration:none;">
-                📷 @ecodescarte.pso
-              </a>
-            </p>
+        <div class="noticia-lateral item"
+          data-search="notícia secretaria meio ambiente paraíso óleo fritura sustentável coleta gerenciamento">
+          <img class="noticia-lateral-imagem" src="imagens/noticia-fritura.jpeg"
+            alt="Gerenciamento de Óleo de fritura " />
+          <div class="noticia-lateral-conteudo">
+            <p>Secretaria de Meio Ambiente de Paraíso busca práticas sustentáveis na coleta e gerenciamento de óleo de
+              fritura</p>
+            <a href="https://paraiso.to.gov.br/secretaria-de-meio-ambiente-de-paraiso-busca-praticas-sustentaveis-na-coleta-e-gerenciamento-de-oleo-de-fritura/"
+              class="btn-noticia">SAIBA MAIS</a>
           </div>
         </div>
 
-        <div style="text-align:center; margin-top:20px; font-size:14px; color:#777;">
-          © 2025 Eco Descarte
+      </div>
+
+      <div class="no-result-here">
+        Nenhum resultado encontrado na área de notícias.
+      </div>
+
+    </main>
+
+    <section class="container-reciclagem item"
+      data-search="reciclagem processo transformar resíduos sólidos lixo produtos reduzir consumo matérias-primas poluição desperdício recursos naturais coleta separação processamento materiais papel plástico vidro metal reaproveitados indústria preservação meio ambiente renda sustentável">
+
+      <div class="imagens">
+
+        <img src="imagens/imagem2.jpg" alt="Reciclagem de plásticos">
+
+      </div>
+
+
+
+      <div class="texto">
+
+        <h1>O QUE É RECICLAGEM?</h1>
+
+        <p>
+
+          Reciclagem é o processo de transformar resíduos sólidos que iriam para o lixo em novos produtos,
+          reduzindo o consumo de matérias-primas, a poluição e o desperdício de recursos naturais.
+          Ela envolve a coleta, separação e processamento de materiais como papel, plástico, vidro e metal,
+          que podem ser reaproveitados na indústria.
+
+        </p>
+
+        <p>
+
+          Além de diminuir a quantidade de lixo nos aterros, a reciclagem contribui para a preservação do meio
+          ambiente e gera renda para muitas pessoas. Reciclar é um gesto simples, mas com grande impacto na
+          construção de um futuro mais sustentável.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="dicas" id="dicas">
+
+      <div class="dica">
+
+        <h3>DICAS DE RECICLAGEM</h3>
+
+      </div>
+
+      <div class="cards">
+
+        <div class="card item" data-search="dica separar lixo organizar reciclável não reciclável coleta">
+
+          <img src="imagens/lixeiras.png" alt="Separar Lixo">
+
+          <h2>Separe o Lixo</h2>
+
+          <p>Organize o lixo em reciclável e não reciclável para facilitar a coleta.</p>
+
+        </div>
+
+
+
+        <div class="card item" data-search="dica limpar recicláveis lavar embalagens descartar mau cheiro contaminação">
+
+          <img src="imagens/reciclavel.png" alt="Limpar Recicláveis">
+
+          <h2>Limpe os Recicláveis</h2>
+
+          <p>Lave embalagens antes de descartá-las. Isso evita mau cheiro e contaminação.</p>
+
+        </div>
+
+
+
+        <div class="card item" data-search="dica reutilizar materiais garrafas potes papéis ações">
+
+          <img src="imagens/garrafa.png" alt="Reutilizar">
+
+          <h2>Reutilize Materiais</h2>
+
+          <p>Dê uma nova função a garrafas, potes e papéis. Pequenas ações fazem diferença!</p>
+
+        </div>
+
+        <div class="card item"
+          data-search="dica composteira transformar restos comida adubo natural reduzir lixo orgânico">
+
+          <img src="imagens/fruta.png" alt="Composteira">
+
+          <h2>Use Composteira</h2>
+
+          <p>Transforme restos de comida em adubo natural e reduza o lixo orgânico.</p>
+
+        </div>
+
+      </div>
+
+      <div class="no-result-here">
+        Nenhum resultado encontrado na área de dicas.
+      </div>
+
+    </section>
+
+    <div class="container-lista-residuos" id="lista-residuos">
+
+      <h3>LISTA DE RESÍDUOS RECICLÁVEIS</h3>
+
+      <P>A lista de resíduos abaixo tem caráter apenas <strong>informativo</strong>, visto que atualmente não há coleta
+        seletiva de recicláveis no município.</P>
+
+    </div>
+
+    <div class="lixeiras">
+
+      <h3>CLIQUE NA LIXEIRA</h3>
+
+      <!-- Papel -->
+
+      <div class="lixeira-bloco item"
+        data-search="papel papelão jornais revistas listas telefônicas papéis escritório desenho seda kraft impressos embalagens marmitex alumínio ovos longa vida produtos higiene papel alumínio filtrante heliográfico">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa azul"></div>
+
+            <div class="corpo azul">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Papel</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Papel</h3>
+
+          <p><strong>Papel e papelão:</strong> jornais, revistas, listas telefônicas, papéis de escritório, desenho,
+            seda, kraft e impressos. <br><br>
+
+            <strong>Embalagens:</strong> marmitex de alumínio, ovos, longa vida e produtos de higiene. <br><br>
+
+            <strong>Outros papéis:</strong> papel alumínio, filtrante e heliográfico.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Plástico -->
+
+      <div class="lixeira-bloco item"
+        data-search="plástico copos potes tampas sacos sacolas utensílios mesas embalagens frutas legumes marmitex ovos isopor produtos higiene limpeza refrigerantes cápsulas café frascos garrafas condimentos molhos bebidas alcoólicas não alcoólicas canetas acrílicos">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa vermelha"></div>
+
+            <div class="corpo vermelha">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Plástico</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Plástico</h3>
+
+          <p><strong>Plásticos diversos:</strong> copos, potes, tampas, sacos, sacolas, utensílios e mesas de
+            plástico.<br><br>
+
+            <strong>Embalagens:</strong> frutas, legumes, marmitex e ovos (isopor), produtos de higiene e limpeza,
+            refrigerantes e cápsulas de café. <br><br>
+
+            <strong>Frascos e garrafas:</strong> condimentos, molhos, bebidas alcoólicas e não alcoólicas; partes
+            externas de canetas e acrílicos.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Metal -->
+
+      <div class="lixeira-bloco item"
+        data-search="metal ferragens fios cobre panelas latas embalagens metálicas aerosol azeite cerveja óleo refrigerante sardinha">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa amarela"></div>
+
+            <div class="corpo amarela">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Metal</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Metal</h3>
+
+          <p><strong>Metais diversos:</strong> ferragens, fios de cobre e panelas sem cabo. <br><br>
+
+            <strong>Latas e embalagens metálicas:</strong> aerosol, azeite, cerveja, óleo, refrigerante e sardinha.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Vidro -->
+
+      <div class="lixeira-bloco item"
+        data-search="vidro domésticos embalagens copos frascos condimentos molhos perfumes garrafas bebidas cacos luminárias vidros automóveis janelas">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa verde"></div>
+
+            <div class="corpo verde">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Vidro</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Vidro</h3>
+
+          <p><strong>Vidros domésticos e embalagens:</strong> copos, frascos de condimentos, molhos, perfumes e garrafas
+            de bebidas. <br><br>
+
+            <strong>Vidros diversos:</strong> cacos, luminárias, vidros de automóveis e janelas.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Baterias -->
+
+      <div class="lixeira-bloco item"
+        data-search="baterias pilhas celulares tablets fones carregadores computadores câmeras digitais notebooks linha verde marrom televisores tubo DVDs acessórios áudio linha branca máquinas lavar roupa louça geladeiras fogão ar-condicionado micro-ondas linha azul aparelhos domésticos secadores cafeteiras ferro passar liquidificadores aspiradores">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa laranja"></div>
+
+            <div class="corpo laranja">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Baterias</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Baterias</h3>
+
+          <p><strong>Linha verde:</strong> pilhas, baterias, celulares, tablets, fones, carregadores, computadores,
+            câmeras digitais e notebooks. <br><br>
+
+            <strong>Linha marrom:</strong> televisores com tubo, DVDs e acessórios de áudio. <br><br>
+
+            <strong>Linha branca:</strong> máquinas de lavar roupa e louça, geladeiras, fogão, ar-condicionado e
+            micro-ondas. <br><br>
+
+            <strong>Linha azul:</strong> aparelhos domésticos como secadores, cafeteiras, ferro de passar,
+            liquidificadores e aspiradores.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Rejeitos -->
+
+      <div class="lixeira-bloco item"
+        data-search="rejeitos madeira reciclável resíduos eletrônicos isopor óleo cozinha usado filtrado armazenado garrafa PET descarte adequado">
+
+        <div class="lixeira-item" onclick="mostrarInfo(this)">
+
+          <div class="lixeira-container">
+
+            <div class="tampa cinza"></div>
+
+            <div class="corpo cinza">
+
+              <img src="imagens/simbolo.png" alt="Reciclagem" class="reciclagem">
+
+            </div>
+
+          </div>
+
+          <p class="legenda">Outros</p>
+
+        </div>
+
+        <div class="info">
+
+          <h3>Rejeitos</h3>
+
+          <p><strong>Madeira:</strong> reciclável em alguns casos, dependendo da disponibilidade local. <br><br>
+
+            <strong>Resíduos eletrônicos:</strong> recicláveis quando houver estrutura adequada de reciclagem. <br><br>
+
+            <strong>Isopor:</strong> pode ser reciclado em locais específicos, dependendo da disponibilidade. <br><br>
+
+            <strong>Óleo de cozinha usado:</strong> deve ser filtrado e armazenado em garrafa PET para descarte
+            adequado.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="no-result-here">
+        Nenhum resultado encontrado na lista de resíduos.
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer id="contatos">
+    <div class="partners-container" aria-label="Seção de Parcerias">
+      <div class="partners-title">APOIO</div>
+      <div class="partners-grid">
+        <div class="partner-logo">
+          <a href="https://www.reciclanip.org.br/" target="_blank" rel="noopener">
+            <img src="imagens/logo-reciclanip.png" alt="reciclaNip">
+          </a>
+        </div>
+        <div class="partner-logo">
+          <a href="https://paraiso.to.gov.br" target="_blank" rel="noopener">
+            <img src="imagens/logo-gov-pso.png" alt="Governo de Paraíso do Tocantins – Educação e Juventude">
+          </a>
+        </div>
+        <div class="partner-logo">
+          <a href="https://www.ifto.edu.br/paraiso" target="_blank" rel="noopener">
+            <img src="imagens/logo-ifto.png" alt="IFTO – Campus Paraíso do Tocantins">
+          </a>
+        </div>
+        <div class="partner-logo">
+          <a href="https://institutonaturavida.com.br/" target="_blank" rel="noopener">
+            <img src="imagens/logo-ina.png" alt="Instituto Natura Vida">
+          </a>
         </div>
       </div>
-    </footer> 
+      <div
+        style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:40px;">
 
+        <div style="flex:1; min-width:250px;">
+          <h3 style="font-size:20px; font-weight:bold; margin-bottom:15px; color:#000;">Ouvidoria</h3>
+          <p style="margin:8px 0;">
+            <a href="mailto:ouvidoria@paraiso.to.gov.br" style="color:#008000; text-decoration:none;">
+              ✉️ ouvidoria@paraiso.to.gov.br
+            </a>
+          </p>
+          <p style="margin:8px 0;">
+            <a href="tel:+5563999997665" style="color:#008000; text-decoration:none;">
+              📞 Telefone: (63) 99999-7665
+            </a>
+          </p>
+        </div>
+
+        <div style="flex:1; min-width:200px; text-align:center;">
+          <a href="index.html">
+            <img src="imagens/logo-eco-descarte.png" alt="Logo do Projeto" style="max-width:180px; margin-bottom:10px;">
+          </a>
+        </div>
+
+        <div style="flex:1; min-width:250px;">
+          <h3 style="font-size:20px; font-weight:bold; margin-bottom:15px; color:#000;">Contatos do Projeto</h3>
+          <p style="margin:8px 0;">
+            <a href="mailto:ecodescartepso@gmail.com" style="color:#008000; text-decoration:none;">
+              ✉️ ecodescartepso@gmail.com
+            </a>
+          </p>
+          <p style="margin:8px 0;">
+            <a href="https://instagram.com/ecodescarte.pso" target="_blank"
+              style="color:#008000; text-decoration:none;">
+              📷 @ecodescarte.pso
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:20px; font-size:14px; color:#777;">
+        © 2025 Eco Descarte
+      </div>
+    </div>
+  </footer>
+  <script src="search.js"></script>
 </body>
+
+</html>

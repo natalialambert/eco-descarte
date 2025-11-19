@@ -1,107 +1,74 @@
-// Aguarda o carregamento completo da página
-document.addEventListener('DOMContentLoaded', function() {
-    const searchForm = document.getElementById('search-form');
-    const searchInput = document.getElementById('search-input');
-    const contentArea = document.getElementById('content-area');
-    const searchResults = document.getElementById('search-results');
+document.addEventListener("DOMContentLoaded", () => {
 
-    // Verifica se os elementos existem
-    if (!searchForm || !searchInput || !contentArea) {
-        console.log('Elementos de busca não encontrados');
-        return;
+    const searchInput = document.getElementById("search-input");
+    const searchForm = document.getElementById("search-form");
+    const contentArea = document.getElementById("content-area");
+    const allItems = document.querySelectorAll(".item");
+    const allNoResultMessages = document.querySelectorAll(".no-result-here");
+    const searchResultsBox = document.getElementById("search-results");
+
+    function clearNoResultMessages() {
+        allNoResultMessages.forEach(msg => msg.style.display = "none");
     }
 
-    // Função de busca com filtro
-    function performSearch(searchTerm) {
-        const term = searchTerm.toLowerCase().trim();
-        
-        // Se o campo estiver vazio, mostra todos os itens
-        if (term === '') {
-            const items = contentArea.querySelectorAll('.item');
-            items.forEach(item => {
-                item.style.display = '';
-            });
-            if (searchResults) {
-                searchResults.innerHTML = '';
-            }
-            // Scroll suave para o topo se necessário
+    function resetVisibility() {
+        allItems.forEach(item => item.style.display = "");
+    }
+
+    function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+
+        clearNoResultMessages();
+        resetVisibility();
+        searchResultsBox.innerHTML = "";
+
+        if (query === "") {
             return;
         }
 
-        // Busca nos itens com atributo data-search e no conteúdo
-        const items = contentArea.querySelectorAll('.item');
-        let foundCount = 0;
-        const searchTerms = term.split(' ').filter(t => t.length > 0); // Divide em múltiplos termos
+        let resultsFound = 0;
 
-        items.forEach(item => {
-            const searchText = (item.getAttribute('data-search') || '').toLowerCase();
-            const itemText = (item.textContent || '').toLowerCase();
-            const itemTitle = item.querySelector('h1, h2, h3, h4, h5, h6');
-            const titleText = itemTitle ? itemTitle.textContent.toLowerCase() : '';
-            
-            // Verifica se todos os termos de busca estão presentes
-            let matches = true;
-            for (let searchWord of searchTerms) {
-                if (!searchText.includes(searchWord) && 
-                    !itemText.includes(searchWord) && 
-                    !titleText.includes(searchWord)) {
-                    matches = false;
-                    break;
-                }
-            }
-            
-            if (matches) {
-                item.style.display = '';
-                foundCount++;
-                
-                // Scroll suave para o primeiro resultado encontrado
-                if (foundCount === 1) {
-                    setTimeout(() => {
-                        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }, 100);
-                }
-            }
-        );
+        allItems.forEach(item => {
+            const keywords = item.dataset.search.toLowerCase();
 
-        // Mostra mensagem de resultado
-        if (searchResults) {
-            if (foundCount === 0) {
-                searchResults.innerHTML = '<p class="no-results">Nenhum resultado encontrado para "' + searchTerm + '"</p>';
-                searchResults.style.display = 'block';
+            if (!keywords.includes(query)) {
+                item.style.display = "none";
             } else {
-                searchResults.innerHTML = '<p class="results-count">' + foundCount + ' resultado(s) encontrado(s) para "' + searchTerm + '"</p>';
-                searchResults.style.display = 'block';
+                resultsFound++;
             }
+        });
+
+        let resultsMsg = "";
+
+        if (resultsFound > 0) {
+            resultsMsg = `<div class="result-count">${resultsFound} resultado(s) encontrado(s)</div>`;
+            searchResultsBox.innerHTML = resultsMsg;
+
+            contentArea.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+
+        allNoResultMessages.forEach(msg => {
+            const parentSection = msg.closest("section, .container-lista-residuos, main, .lixeiras");
+
+            const visibleItems = parentSection.querySelectorAll(".item:not([style*='display: none'])");
+
+            if (visibleItems.length === 0) {
+                msg.style.display = "block";
+            }
+        });
     }
 
-    // Evento de submit do formulário
-    searchForm.addEventListener('submit', function(e) {
+    searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const searchTerm = searchInput.value;
-        performSearch(searchTerm);
+        performSearch();
     });
 
-    // Busca ao pressionar Enter
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            searchForm.dispatchEvent(new Event('submit'));
+    searchInput.addEventListener("input", () => {
+        if (searchInput.value.trim() === "") {
+            clearNoResultMessages();
+            resetVisibility();
+            searchResultsBox.innerHTML = "";
         }
     });
 
-    // Limpa resultados quando o campo é limpo
-    searchInput.addEventListener('input', function() {
-        if (searchInput.value.trim() === '') {
-            const items = contentArea.querySelectorAll('.item');
-            items.forEach(item => {
-                item.style.display = '';
-            });
-            if (searchResults) {
-                searchResults.innerHTML = '';
-                searchResults.style.display = 'none';
-            }
-        }
-    });
 });
-
