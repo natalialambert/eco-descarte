@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <div class="logo">
+        <div class="logo" data-search="eco descarte logo projeto sustentabilidade paraíso tocantins">
             <img src="imagens/logo-eco-descarte.png" alt="Eco Descarte">
             <a class="logo-link" href="index.html"><h1>Eco Descarte</h1></a>
         </div>
@@ -30,13 +30,16 @@
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="#contatos">Contatos</a></li>
                 <li>
-                    <form class="search-form" action="#" method="GET">
-                      <input type="text" name="q" placeholder="Buscar..." />
-                      <button type="submit">
-                        <img src="imagens/icone-busca.png" alt="Buscar" class="search-icon-img">
-                      </button>
-                    </form>
-                  </li>            
+                  <form id="search-form" class="search-form" onsubmit="return false;">
+                    <input type="text" id="search-input" placeholder="Buscar..." />
+                    <button type="submit">
+                      <img src="imagens/icone-busca.png" alt="Buscar" class="search-icon-img">
+                    </button>
+                  </form>
+                  <script src="search.js"></script>
+                
+                  <div id="search-results" class="search-results"></div>
+                </li>            
             </ul>
         </nav>
         <script>
@@ -49,18 +52,18 @@
         </script>
     </header>
 
-    <section class="local">
+    <section class="local" data-search="encontre local descartar resíduos horários coleta sustentável">
         <div class="local-conteudo">
             <h2>ENCONTRE O LOCAL CERTO<br>PARA DESCARTAR SEUS RESÍDUOS</h2>
             <p><strong>Consulte os horários</strong> e pontos de coleta disponíveis na sua região e contribua para um futuro mais sustentável.</p>
         </div>
     </section>
 
-    <section class="local-descarte">
+    <section class="local-descarte" data-search="locais de descarte pontos coleta">
         <h3>LOCAIS DE DESCARTE</h3>
     </section>
 
-    <section class="mapa">
+    <section class="mapa" data-search="mapa locais coleta resíduos descartar reciclagem">
       <h2>MAPA DOS LOCAIS DE COLETA</h2>
       <p>Use CTRL + scroll para dar zoom no mapa</p>
       <div id="map"></div>
@@ -71,7 +74,7 @@
     </section>
 
     <section>
-        <div class="lista-descarte">
+        <div class="lista-descarte" data-search="pilhas baterias pneus eletrônicos descarte correto">
             <nav>
               <ul class="menu">
                 <li><a href="#" data-section="construction" class="active">PILHAS E BATERIAS</a></li>
@@ -83,16 +86,15 @@
             </main>
             <script src="script.js"></script>
           </div>
-      
     </section>
 
-    <section class="horario-coleta">
+    <section class="horario-coleta" data-search="horários coleta setores bairros dias funcionamento">
       <h3>HORÁRIOS DE COLETA</h3>
     </section>
 
     <section>
       <div class="content">
-        <div class="setor1">
+        <div class="setor1" data-search="centro interlagos transbrasiliana serrano bela vista oeste horários coleta">
           <h2>CENTRO, INTERLAGOS, TRANSBRASILIANA, SERRANO I, SERRANO II, BELA VISTA E OESTE.</h2>
           <p>Segunda à Sábado<br>04h às 12h</p>
             
@@ -105,7 +107,8 @@
           <h2>SETOR PARQUE DOS BURITIS</h2>
           <p>Segunda, Quarta, Sexta e Sábado<br>04h às 12h</p>
         </div>
-        <div class="setor2">
+
+        <div class="setor2" data-search="auto paraíso pouso alegre santa clara jardim américa universitário nova esperança parque industrial ypês avenida 23 outubro vila chapadão horários coleta">
           <h2>AUTO PARAÍSO LADO DIREITO, POUSO ALEGRE, SANTA CLARA E JARDIM AMÉRICA</h2>
           <p>Segunda à Sábado<br>13h às 21h</p>
 
@@ -118,16 +121,18 @@
           <h2>VILA CHAPADÃO</h2>
           <p>Quarta e Sexta<br>13h às 21h</p>
         </div>
+
         <div class="setor-img">
           <img src="imagens/foto-horario.jpg" alt="Foto de garrafas" width="480px"/>
         </div>
+      </div>
     </section>
 
-    <section class="escola">
+    <section class="escola" data-search="escolas participantes coleta seletiva paraíso tocantins">
         <h3>ESCOLAS PARTICIPANTES DA COLETA SELETIVA</h3>
     </section>
 
-    <section class="escolas">
+    <section class="escolas" data-search="creche escola municipal lista instituições educação coleta seletiva">
         <p>
             Creche Municipal Arco Íris <br>
             Creche Municipal Aureny Siqueira Campos <br>
@@ -149,7 +154,7 @@
         </p>
     </section>
 
-    <footer id="contatos">
+    <footer id="contatos" data-search="ouvidoria contatos projeto eco descarte prefeitura apoio parceiros">
         <div class="partners-container" aria-label="Seção de Parcerias">
           <div class="partners-title">APOIO</div>
           <div class="partners-grid">
@@ -174,6 +179,7 @@
               </a>
             </div>
           </div>
+
           <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:40px;">
   
             <div style="flex:1; min-width:250px;">
@@ -218,3 +224,4 @@
       </footer> 
   
   </body>
+</html>
