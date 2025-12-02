@@ -129,6 +129,16 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
+.no-result-here {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b00;
+  font-style: italic;
+  font-size: 20px;
+}
+
 /* Hero */
 .hero {
   background: url("../imagens/inicio.jpg") center/cover no-repeat;
