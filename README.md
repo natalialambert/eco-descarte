@@ -37,7 +37,7 @@ O projeto foi proposto e orientado pela professora Thatiane Rosa e desenvolvido 
 | Disciplina | Projeto Integrador |
 | Ano | 2025 |
 
-##Continuidade
+## Continuidade
 
 Após a versão desenvolvida em 2025, o projeto foi continuado por outra turma, que deu sequência ao trabalho com novas melhorias e funcionalidades.
 
