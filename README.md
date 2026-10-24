@@ -2,8 +2,8 @@
 
 Site de conscientização sobre o descarte correto de resíduos, desenvolvido como projeto da disciplina de Projeto Integrador do curso Técnico em Informática do IFTO Campus Paraíso.
 
-🌐 **Acesse o site:** [https://eco.pso-to.srv.br/]
-📸 **Instagram:** [@ecodescarte.pso]
+🌐 **Acesse o site:** https://eco.pso-to.srv.br/
+📸 **Instagram:** @ecodescarte.pso
 
 ## Sobre o projeto
 
@@ -55,7 +55,7 @@ Após a versão desenvolvida em 2025, o projeto foi continuado por outra turma, 
 
 O site está hospedado em um link disponibilizado pela prefeitura de Paraíso do Tocantins e pode ser acessado diretamente:
 
-👉 [https://eco.pso-to.srv.br/]
+👉 https://eco.pso-to.srv.br/
 
 ### Localmente
 
@@ -92,4 +92,4 @@ O site abrirá no navegador e não precisa de instalação de dependências nem 
 
 Como parte do projeto, foi criado um perfil no Instagram para compartilhar conteúdos sobre o descarte correto de resíduos e divulgar o site. Atualmente, o perfil é gerido pela nova turma que deu continuidade ao projeto.
 
-📸 [@ecodescarte.pso]
+📸 @ecodescarte.pso
