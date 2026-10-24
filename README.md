@@ -20,7 +20,8 @@ O projeto foi proposto e orientado pela professora Thatiane Rosa e desenvolvido 
 **Desenvolvimento**
 
 - Amarilis Carvalho
-- Gabriela Salles
+- Gabriela Sales
+- Natália Lambert
 - Bianca Doerner
 - Nadielly Cruz
 - Higor Barcelo
