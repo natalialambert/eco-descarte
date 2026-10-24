@@ -30,6 +30,7 @@ O projeto foi proposto e orientado pela professora Thatiane Rosa e desenvolvido 
   
 ## Contexto acadêmico
 
+| Informação | Detalhe |
 | --- | --- |
 | Instituição | Instituto Federal do Tocantins (IFTO), Campus Paraíso |
 | Curso | Ensino Médio Técnico em Informática |
