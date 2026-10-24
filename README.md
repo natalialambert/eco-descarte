@@ -28,18 +28,19 @@ O projeto foi proposto e orientado pela professora Thatiane Rosa e desenvolvido 
 - Samuel Barbosa
 - José Carlos de Mello
   
-##Contexto acadêmico
+## Contexto acadêmico
 
-| Instituição: | Instituto Federal do Tocantins (IFTO), Campus Paraíso |
-| Curso: | Ensino Médio Técnico em Informática |
-| Disciplina: | Projeto Integrador |
-| Ano: | 2025 |
+| --- | --- |
+| Instituição | Instituto Federal do Tocantins (IFTO), Campus Paraíso |
+| Curso | Ensino Médio Técnico em Informática |
+| Disciplina | Projeto Integrador |
+| Ano | 2025 |
 
 ##Continuidade
 
 Após a versão desenvolvida em 2025, o projeto foi continuado por outra turma, que deu sequência ao trabalho com novas melhorias e funcionalidades.
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
 | --- | --- |
@@ -50,7 +51,7 @@ Após a versão desenvolvida em 2025, o projeto foi continuado por outra turma, 
 | GitHub | Hospedagem do repositório e colaboração |
 | Figma | Design e prototipação |
 
-##Como executar
+## Como executar
 
 ### Online
 
